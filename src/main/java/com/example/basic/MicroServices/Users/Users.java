@@ -2,12 +2,17 @@ package com.example.basic.MicroServices.Users;
 
 import java.util.Date;
 
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
+
 public class Users 
 {
 	private Integer id;
 	
+	@Size(min=2)
 	private String name;
 	
+	@Past
 	private Date birthDate;
 	
 	protected Users()
