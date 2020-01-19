@@ -10,6 +10,7 @@ public class FilteringController
 public SomeBeans retrieveSomeBeans()
 {
 	
+		
 	return new SomeBeans("drake","7","v");
 }
 }
