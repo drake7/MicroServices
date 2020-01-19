@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class FilteringController 
 {
 	@GetMapping("/filtering")
-public SomeBeans retrieveSomeBeans()
+public SomeBeans  retrieveSomeBeans()
 {
 	
 		

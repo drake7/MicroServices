@@ -9,6 +9,7 @@ private String field2;
 
 @JsonIgnore
 private String field3;
+
 public SomeBeans(String field1, String field2, String field3) {
 	super();
 	this.field1 = field1;
