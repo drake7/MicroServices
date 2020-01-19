@@ -17,21 +17,21 @@ public class RestFulApplication {
 		SpringApplication.run(RestFulApplication.class, args);
 	}
 
-	@Bean
-	public LocaleResolver localeResolver()
-	{
-	SessionLocaleResolver slr=new SessionLocaleResolver();
-	slr.setDefaultLocale(Locale.US);
-		
-		return slr;
-		
-	}
-	
-	@Bean 
-	public ResourceBundleMessageSource res()
-	{
-		ResourceBundleMessageSource sc=new ResourceBundleMessageSource();
-		sc.setBasename("Message From");
-		return null;
-	}
+//	@Bean
+//	public LocaleResolver localeResolver()
+//	{
+//	SessionLocaleResolver slr=new SessionLocaleResolver();
+//	slr.setDefaultLocale(Locale.US);
+//		
+//		return slr;
+//		
+//	}
+//	
+//	@Bean 
+//	public ResourceBundleMessageSource res()
+//	{
+//		ResourceBundleMessageSource sc=new ResourceBundleMessageSource();
+//		sc.setBasename("Message From");
+//		return null;
+//	}
 }

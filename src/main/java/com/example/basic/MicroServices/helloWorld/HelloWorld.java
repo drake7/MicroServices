@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloWorld 
 {
-	@Autowired
-	private MessageSource msg;
+	//@Autowired
+	//private MessageSource msg;
 
 @RequestMapping(method=RequestMethod.GET,path="/hello-world")
 public String helloWorld()
@@ -33,9 +33,9 @@ public HelloWorldBean helloWorldBean()
 return  new HelloWorldBean("hello beans");	
 }
 
-@GetMapping(path="hello-international")
-public String helloInternationally(@RequestHeader (name="Accept-Language",required = false)Locale locale)
-{
-return msg.getMessage("good.morning.message", null,locale);	
-}
+//@GetMapping(path="hello-international")
+//public String helloInternationally(@RequestHeader (name="Accept-Language",required = false)Locale locale)
+//{
+//return msg.getMessage("good.morning.message", null,locale);	
+//}
 }
